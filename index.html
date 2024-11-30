@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- boxicons -->
+</head>
+
+<body>
+    <div class="bodyContainer">
+        <div class="text1 tpp">
+            <span class="spell1">Weather Checker</span>
+           
+        </div>
+       <div class="content ">
+            <div class="searchBox">
+                <input type="text" placeholder="Enter your City" id="input">
+                <button onclick="checked()">Check</button>
+            </div>
+            <div class="weatherBox">
+                <div class=" box box1">
+                    <div class="inbox inbox1" id="inbox1">
+                       
+                        <h1>Longitude :</h1>
+                        <h1>Latitude  :</h1>
+                    </div>
+                    <div class="inbox inbox2" id="inbox2">
+                        <span id="condition">City</span>
+                        <div class="value" id="degree">00<div id="celsious"><sup></sup>Celcious</div>
+                            
+                        </div>
+                        <span id="condition">----</span>
+    
+                    </div>
+                    <div class="icons1" id="icons1">
+                        <div class="iconBox"><img src="./img/wind.png" alt=""><span id="wind" class="unit">--
+                                mph</span>
+                        </div>
+                        <div class="iconBox"><img src="./img/pressure.png" alt=""><span id="pressure" class="unit">--
+                                hpa</span>
+                        </div>
+                        <div class="iconBox"><img src="./img/water-drop.png" alt=""><span id="humid" class="unit">--
+                                %</span></div>
+                        
+                    </div>
+
+                <!-- 2 -->
+                    <div class=" icons2" id="icons2">
+                        <div class="iconBox"><img src="./img/sunrise.png" alt=""><span id="sunrise" class="unit">--
+                                </span>
+                        </div>
+                        <div class="iconBox"><img src="./img/sunset.png" alt=""><span id="sunset" class="unit">--
+                                </span>
+                        </div>
+                       
+                        <div class="iconBox"><span>Feels Like</span><span class="unit"
+                                id="feels">--<sup>o</sup></span>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+            </div>
+       </div>
+       
+
+
+</body>
+<script src="./main.js"></script>
+
+</html>
