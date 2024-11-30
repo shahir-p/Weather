@@ -51,22 +51,12 @@ const checked = async () => {
                         </div>
                     <div class="iconBox"><img src="./img/water-drop.png" alt=""><span id="humid" class="unit">${weather.main.humidity}
                             %</span></div>
-            `
-
-            icons2.innerHTML = `
-             <div class=" icons2" id="icons2">
-                        <div class="iconBox"><img src="./img/sunrise.png" alt=""><span id="sunrise" class="unit">${sunrise1[1]}
-                                </span>
-                        </div>
-                        <div class="iconBox"><img src="./img/sunset.png" alt=""><span id="sunset" class="unit">${sunset1[1]}
-                                </span>
-                        </div>
-                       
-                        <div class="iconBox"><span>Feels Like</span><span class="unit"
+                             <div class="iconBox"><span>Feels Like</span><span class="unit"
                                 id="feels">${feels}<sup>o</sup></span>
                         </div>
-                    </div>
             `
+
+       
 
 
         } else {
