@@ -12,19 +12,6 @@ const checked = async () => {
                 description = element.main
 
             });
-            sunrise = weather.sys.sunrise
-            console.log(sunrise);
-            const date = new Date(sunrise * 1000);
-            console.log(date.toLocaleString()); // Output: Local time
-            sunrise1=(date.toLocaleString()).split(",")
-            console.log(sunrise1[1]);
-            
-            sunset = weather.sys.sunset
-            console.log(sunrise);
-            const date1 = new Date(sunset * 1000);
-            console.log(date.toLocaleString()); // Output: Local time
-            sunset1=(date1.toLocaleString()).split(",")
-            console.log(sunset1[1]);
             
 
 
@@ -39,7 +26,7 @@ const checked = async () => {
 
             inbox2.innerHTML = `
              <span id="condition">${weather.name} , ${weather.sys.country}</span>
-                    <div class="value"id="degree">${temp}<div id="celsious">degree</div></div>
+                    <div class="value"id="degree">${temp}<div id="celsious">Celsius</div></div>
                      <span id="condition">${description}</span>
             `
             icons1.innerHTML = `

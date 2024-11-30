@@ -111,6 +111,7 @@
     font-weight: 500;
     color: #3e3e3e;
 }
+
 .value{
     display: flex;
     margin-left: 100px;
@@ -133,7 +134,7 @@
 }
 .icons1{
     position: absolute;
-    top: 47%;
+    top: 45%;
     left: 5vw;
     width: 150px;
     height: 100px;
@@ -142,17 +143,7 @@
     gap: 20px;
     /* background-color: red; */
 }
-.icons2{
-    position: absolute;
-    top: 42%;
-    right: 2.5vw;
-    width: 150px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* background-color: red; */
-}
+
 .iconBox{
     display: flex;
     /* justify-content: center; */
