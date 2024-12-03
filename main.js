@@ -1,3 +1,16 @@
+const month = {
+    month : "long"
+    
+ }
+
+ const day = {
+    day : "numeric"
+ }
+
+ const year = {
+    year : "numeric"
+ }
+
 const checked = async () => {
     console.log(input.value);
     if (input.value) {
@@ -16,10 +29,15 @@ const checked = async () => {
 
 
             inbox1.innerHTML = `
-            
+                        <div>
+                            <h1>Date : ${new Date(weather.dt*1000).toLocaleString('en-US',day)}-${new Date(weather.dt*1000).toLocaleString('en-US',month)}-${new Date(weather.dt*1000).toLocaleString('en-US',year)}</h1>
+                         
+                       </div>
                     
-                    <h1>Longitude : ${(weather.coord.lon).toFixed(1)} </h1>
-                    <h1>Latitude : ${(weather.coord.lat).toFixed(1)}</h1>
+                   <div>
+                        <h1>Longitude : ${(weather.coord.lon).toFixed(1)} </h1>
+                        <h1>Latitude : ${(weather.coord.lat).toFixed(1)}</h1>
+                   </div>
                 
                 
          `
